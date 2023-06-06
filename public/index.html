@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>URL SHORTNER</header>
+
+    <div>
+        <input type="text" placeholder="paste click here" id="link">
+        <button type="submit" id="submit">Click Here</button>
+    </div>
+</body>
+
+<script>
+    let link = document.getElementById("link");
+    // link.onchange = ()=>{console.log(link.value)}
+
+    let Submit = document.getElementById("submit");
+    Submit.addEventListener('click', (e)=>{e.preventDefault();
+        console.log("Form Submited")
+        console.log(link.value)
+    })
+
+</script>
+</html>
